@@ -1,8 +1,18 @@
 {
   "compilerOptions": {
     "outDir": "build",
-    "types": ["node", "jest"],
-    "sourceMap": true
+    "watch": true,
+    "alwaysStrict": true,
+    "sourceMap": true,
+    "types": ["node", "jest"]
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*", "src/app/shared/**/*", "typings/*.d.ts"],
+  "exclude": [
+    "node_modules",
+    "jspm_packages",
+    "application",
+    "system",
+    "dist",
+    "build"
+  ]
 }
